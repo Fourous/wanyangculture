@@ -1,0 +1,35 @@
+<view class='container'>
+  <scroll-view scroll-y="true" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad" data-id='0'>
+    <view class="skeleton-group" wx:for="{{share_book}}" wx:key="{{index}}">
+      <view class="skeleton-group-cover">
+        <view class='book'>
+          <image class='book' src="{{temp[item[1]][0]}}" mode='scaleToFill' />
+        </view>
+      </view>
+
+      <view class="skeleton-group-cover">
+        <view class='book'>
+          <image class='book' src="{{temp[item[1]][1]}}" mode='scaleToFill' />
+        </view>
+      </view>
+
+      <view class="skeleton-group-cover">
+        <view class='book'>
+          <image class='book' src="{{temp[item[1]][2]}}" mode='scaleToFill' />
+        </view>
+      </view>
+
+
+      <view class="skeleton-group-text">
+        <view class="skeleton-group-title">状态:{{item[3]}}</view>
+
+        <!-- <view class="skeleton-group-title">{{item[6]}}</view>  -->
+
+        <view class="skeleton-group-title">
+        <text>获取收益: </text>
+        <text class='money-color'> {{item[2]}}</text>
+        </view>      
+      </view>
+    </view>
+  </scroll-view>
+</view>

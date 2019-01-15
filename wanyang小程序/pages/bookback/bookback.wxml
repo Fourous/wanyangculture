@@ -1,0 +1,47 @@
+<!--pages/bookback/bookback.wxml-->
+<!--这里是所有书籍返回的共用点-->
+
+<view class='bookback'>
+<view class='bookone'>
+<view  wx:for="{{list}}" wx:key="book">
+
+      <view class='book_item' data-id="{{book.id}}" >
+ <navigator url='../book/book?id={{item[0].bookid}}'>
+        <view class='bookpic'>
+        <image class='bookimg' src='{{list0[index].tag}}'></image>
+        </view>
+
+        <view class='book_detail'>
+
+          <view class='bookname'>
+            <text class='booktxt'>{{item[0].bookname}}</text>
+          </view>
+
+        
+          <view class='bookother'>
+          <view class='auedi'>
+          <text class='bookdet'>作者：{{item[0].author}}</text>
+          </view>
+          <view class='auedi'>
+          <text class='bookdet'>出版社:{{item[0].edition}}</text>
+          </view>
+          
+          <view class='bookdiv'>
+          <text class='bookdetype'>{{item[0].booktype}}</text>
+          </view>
+
+          </view>
+
+   </view>
+           <!--热度-->
+          <view class='hot'>
+          <text class='hotnum'>热度：{{item.hotnum}}</text>
+          </view>
+       
+
+</navigator>
+</view>
+
+      </view>
+</view>
+</view>

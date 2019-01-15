@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号设置</title>
+    <link rel="stylesheet" href="css/person.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo_01.png" height="50px" alt="">
+            </div>
+            <div class="userInfo">
+                <div class="userP">
+                    <a href="">
+                        <img class="user" src="img/wx.png" height="50px" alt="">
+                    </a>
+                </div>
+                <div class="userList" style="display: none">
+                    <div>
+                        <a href="">个人中心</a>
+                    </div>
+                    <div>
+                        <a href="">设置</a>
+                    </div>
+                    <div>
+                        <a href="">反馈</a>
+                    </div>
+                    <div>
+                        <a href="">帮助</a>
+                    </div>
+                    <div>
+                        <a href="">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="nav">
+        <div class="nav_content">
+            <ul>
+                <li><a href="personIndex.php">个人中心</a></li>
+                <li class="active"><a href="zhanghao.html">账号设置</a></li>
+                <li><a href="guanzhu.php">我的关注</a></li>
+                <li><a href="jieyue.php">我的借阅</a></li>
+                <li><a href="myshare.php">我的共享</a></li>
+                <li><a href="shoucang.php">我的收藏</a></li>
+                <li><a href="zhifu.html">我的钱包</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main" class="zh_container">
+        <div class="zh_concent">
+            <div class="logo">账号设置</div>
+            <div class="tabs clearfix">
+                <a href="zhanghao.html" class="on">帐号安全</a>
+            </div>
+            <ul class="nav nav-tabs security-nav">
+                <li class="active"><a href="zhanghao.html">修改密码</a></li>
+                <li><a href="weixin.html">修改微信号</a></li>
+                <li><a href="youxiang.html">修改邮箱</a></li>
+                <li><a href="changeMessage.php">个人资料编辑</a></li>
+            </ul>
+            <div class="tab-content security-tab-content">
+                <div class="tab-pane active">
+                    <!-- password_edit 开始-->
+
+                    <form action="zhanghao.php" method="post" id="password_edit" role="form" class="form-horizontal">
+                        <div style="display: none" class="alert alert-danger"></div>
+                        <div style="display: none" class="alert alert-success">密码修改成功！</div>
+                        <div class="form-group">
+                            <label for="old-password" class="col-xs-2 control-label">旧密码：</label>
+                            <div class="col-xs-5">
+                                <input id="old-password" type="password" class="form-control old-password" name="oldpass">
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-password" class="col-xs-2 control-label">新密码：</label>
+                            <div class="col-xs-5">
+                                <input id="new-password" type="password" class="form-control new-password main-password" name="newpass">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="re-password" class="col-xs-2 control-label">再次确认密码：</label>
+                            <div class="col-xs-5">
+                                <input id="re-password" type="password" class="form-control re-password password-agin" name="repeat_newpass">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-5 col-xs-offset-2">
+                                <button class="btn btn-primary btn-lg" type="submit"> 确认修改</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

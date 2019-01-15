@@ -1,0 +1,16 @@
+<view class='pagep'>
+
+<view class='chcontain'>
+
+<view class='chtxt'>
+<input  class='textarea'  maxlength='20' bindinput='getmes' placeholder='请输入兑换码'></input>
+</view>
+
+</view>
+
+<view class='chbtn'>
+<button class='btn' bindtap='exchange'>确认兑换</button>
+</view>
+
+
+</view>

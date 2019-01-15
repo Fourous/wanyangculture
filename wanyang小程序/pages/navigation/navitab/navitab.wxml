@@ -1,0 +1,75 @@
+<!--pages/navigation/navitab/navitab.wxml-->
+<view class='lib'>
+
+<view class='topbackground'>
+<image class='imagetop' src='../../images/top.png'></image>
+</view>
+
+<view class='secondback'>
+
+<!--第1行-->
+<view class='line1'>
+
+<view class='con'>
+<view class='imgtech' bindtap='tobooktab' data-id="杂志">
+<image class='techback' src='../../images/zazhi.png' style="opacity:{{0.8}}" ></image>
+</view>
+
+<view class='txtech'>
+<text class='text'>杂志类</text>
+</view>
+
+</view>
+
+<view class='con'>
+<view class='imgtech' bindtap='tobooktab' data-id="系列小说">
+<image class='techback' src='../../images/reliback.png' style="opacity:{{0.8}}" ></image>
+</view>
+
+<view class='txtech' >
+<text class='text'>系列小说类</text>
+</view>
+
+</view>
+
+
+
+
+</view>
+<!--2-->
+<view class='line2'>
+
+<view class='con' >
+<view class='imgtech' bindtap='tobooktab' data-id="漫画绘本">
+<image class='techback' src='../../images/manhua.png' style="opacity:{{0.8}}" ></image>
+</view>
+
+<view class='txtech'>
+<text class='text'>漫画绘本类</text>
+</view>
+
+</view>
+<view class='con'>
+<view class='imgtech' bindtap='tobooktab' data-id="畅销书">
+<image class='topback' src='../../images/topbook.png' style="opacity:{{0.8}}" ></image>
+</view>
+
+<view class='txtech'>
+<text class='text'>畅销书类</text>
+</view>
+
+</view>
+
+
+
+</view>
+
+</view>
+
+
+</view>
+
+
+
+
+

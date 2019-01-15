@@ -1,0 +1,15 @@
+<!--pages/map/map.wxml-->
+<view class="container">
+  <map id="Map" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" bindregionchange="bindregionchange" polyline="{{polyline}}" markers="{{markers}}" controls="{{controls}}" bindcontroltap="bindcontroltap" bindregionchange="bindregionchange" show-location>
+  </map>
+  <!-- 这里是覆盖页面 -->
+ <cover-view class="place_info">
+<cover-view class="place_info_parking" bindtap='scalethis'>
+<cover-image src='../images/scan.png' class='place_info_index'></cover-image>
+<cover-view class="place_info_surplus">立即扫码</cover-view>
+</cover-view>
+
+
+</cover-view>
+
+</view>

@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family: '宋体';
+}
+.header{
+    width: 100%;
+    height: 100px;
+}
+.header img{
+    width: 100px;
+    height: auto;
+}
+.login_main{
+    width: 100%;
+    float: left;
+}
+.login_main img{
+    width: 100%;
+    height: auto;
+}
+.login_content{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    background: #ffff;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.index_main{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    /*background: #eee;*/
+}
+.shenhe{
+    width: 100%;
+    height: 200px;
+    background: rgb(245,245,245);
+    padding: 20px;
+}
+.shenhe_pic{
+    background: white;
+    height: 160px;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+}
+.shenhe_pic img{
+    width: auto;
+    height: 100%;
+    margin: 0px 25px;
+    padding: 0px auto;
+}
+.m{
+    /*font-size: 10px;*/
+}
+.modal-body{
+    height: auto;
+}
+.zixun{
+    width: 100%;
+    height: auto;
+    background: rgb(245,245,245);
+    margin-bottom: 30px;
+    padding-top: 10px;
+}

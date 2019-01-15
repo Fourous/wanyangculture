@@ -1,0 +1,74 @@
+/* pages/navigation/navitab/navitab.wxss */
+.topbackground {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 300rpx;
+  border-bottom: 20rpx solid rgb(245, 245, 245); 
+  z-index: 1111;
+  text-align: center;
+}
+
+.imagetop {
+  margin-top: 5rpx;
+  width: 98%;
+  height: 90%;
+  border-radius: 7px;
+}
+
+.secondback {
+  margin-top: 350rpx;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.line1 {
+
+  width: 100%;
+  height: 250rpx;
+}
+.line2 {
+  margin-top: 30rpx;
+  width: 100%;
+  height:  250rpx;
+}
+.con {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.imgtech{
+  width: 100%;
+  height: 85%;
+}
+.txtech {
+  width: 100%;
+  height: 25%;
+}
+.techback {
+  width: 200rpx;
+  height: 200rpx;
+   border-radius: 7px;
+}
+
+.reliback {
+  width: 200rpx;
+  height: 200rpx;
+    border-radius: 7px;
+}
+.topback {
+  width: 200rpx;
+  height: 200rpx;
+    border-radius: 7px;
+}
+
+.text {
+  font-size: 11px;
+  font-weight: 250;
+}
+
+
+
+

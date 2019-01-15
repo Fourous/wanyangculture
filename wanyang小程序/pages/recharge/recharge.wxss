@@ -1,0 +1,170 @@
+.contain{
+  width: 100%;
+  height: 100%;
+}
+.backclass{
+  position: fixed;
+  height: 500rpx;
+  width: 100%;
+  z-index: -111;
+}
+.classpng{
+  height: 100%;
+  width: 100%;
+}
+.acc {
+  width: 100%;
+  height: 160rpx;
+  top: 0px;
+ 
+}
+.texm{
+display: block;
+font-size: 15px;
+color: white;
+margin-left: 35rpx;
+line-height: 150rpx;
+font-weight: bold;
+}
+.moneyclss{
+font-size: 10px;
+color: white;
+margin-left: 15rpx;
+}
+.money{
+
+  font-size: 32px;
+  color: white;
+  margin-left: 106px;
+}
+.txtcharge{
+  margin-top: 200rpx;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0px;
+  border-bottom: solid 2rpx #eee;
+  height: 100rpx;
+}
+.txtc{
+font-size: 13px;
+font-weight: bold;
+line-height: 100rpx;
+margin-left: 50rpx;
+}
+.txtc1c{
+font-size: 8px;
+font-weight: lighter;
+margin-left: 20rpx;
+color: gray;
+}
+.recharge {
+  width: 80%;
+  height: 400rpx;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: gray 2rpx 4rpx 3rpx;
+}
+.wider{
+  width: 50%;
+  height: 110rpx;
+  /* font-size: 15px; */
+  display: inline-block;
+  text-align: center;
+}
+.btnview{
+  margin-top: 25rpx;
+}
+.btnone{
+  width: 100%;
+  height: 120rpx;
+}
+.btntwo{
+   width: 100%;
+  height: 120rpx;
+}
+.btnmon1{
+  /* float: left; */
+  width: 85%;
+  height: 100rpx;
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* margin-left: 50rpx; */
+    display: inline-block;
+  text-align: center;
+   border-radius: 6%;
+   border: solid 1rpx orange;
+}
+.viewmon{
+  font-size: 10px;
+  /* font-weight: bold; */
+  display: block;
+}
+.view_adver {
+  font-size: 8px;
+  font-weight: lighter;
+  color: gray;
+}
+.btnmon1.active {
+  background-color: #FF4040;
+}
+.btnmon3.active {
+  background-color: #FF4040;
+}
+.btnmon2.active {
+  background-color: #FF4040;
+}
+.btnmon4.active {
+  background-color: #FF4040;
+}
+.btnmon2{
+  /* float: left; */
+  width: 85%;
+  height: 100rpx;
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* margin-left: 50rpx; */
+    display: inline-block;
+  text-align: center;
+   border-radius: 6%;
+   border: solid 1rpx orange;
+} 
+.btnmon3{
+ /* float: left; */
+  width: 85%;
+  height: 100rpx;
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* margin-left: 50rpx; */
+    display: inline-block;
+  text-align: center;
+   border-radius: 6%;
+   border: solid 1rpx orange;
+}
+.btnmon4{
+ /* float: left; */
+  width: 85%;
+  height: 100rpx;
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* margin-left: 50rpx; */
+    display: inline-block;
+  text-align: center;
+   border-radius: 6%;
+   border: solid 1rpx orange;
+} 
+.buttonclick{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}
+.butclick{
+  width: 80%;
+  border-radius: 0px;
+  font-size: 12px;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #FF4040;
+}

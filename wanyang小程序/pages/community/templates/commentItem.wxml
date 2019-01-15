@@ -1,0 +1,23 @@
+<template name = "comment_item">
+ <view class = "comment_card">
+<!--顶部的时间线-->
+<view class='com_txt'>
+<text class='comment_day'>{{z}} </text>
+<text class='comment_month'> {{y}}.</text>
+<text class='comment_year'>{{x}}</text>
+<text class = "comment_author" bindtap='bindAuthorTap'>{{item.nickname}}</text>
+</view>
+  <view class='com_pic'>
+<image class="comment_image" src = "{{item.img_url}}" mode = "aspectFill"></image>
+</view>
+  <view class = "comment_content">
+   <text class = "comment_content_text">{{item.comment}}</text>
+  </view>
+   <view class='com_btn'>
+ <button open-type="share" class='sharebuttom'></button>
+  <image class='imagecom'  src='../images/share.png'></image>
+  <image class='imagecom' hidden='{{!mark}}'  bindtap='mark' src='../images/unmark.png'></image> -->
+  </view>
+  <!--收藏按钮-->
+ </view>
+</template>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登陆</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="index_container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_01.png" alt="BookLazy" height="110px">
+                    </a>
+                </div>
+                <div class="headerName">
+                    <!--<span class="register_headerName"> | 欢迎注册 </span>-->
+                    | 欢迎登陆
+                </div>
+                <div class="advice">
+                    <a href="">建议反馈</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="carousel-example-generic" class="carousel slide bannera" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+            <li class="" data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li class="" data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner big_img" role="listbox">
+            <div class="item active">
+                <a href="#">
+                    <img src="img/book1.jpeg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/book2.jpg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/book4.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <a href="#carousel-example-generic" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+    </div>
+    <!--登陆窗口-->
+    <div class="login_login">
+        <div class="login_title">
+            <span>登  陆</span>
+            <div class="half_wx">
+                <a href="">
+                    <img src="img/half_wx.png" height="65px" alt="">
+                </a>
+            </div>
+        </div>
+	<form action="login.php" method="POST">
+        <div class="lg_zhanghao">
+            <label for="zhanghao">账号:</label>
+            <input id="zhanghao"type="text" placeholder="仅供输入手机号码" name="zhanghao">
+        </div>
+        <!--输入账号密码判断的地方-->
+        <div class="panduan"></div>
+        <div>
+            <label for="mima">密码:</label>
+            <input id="mima"type="password" placeholder="服务密码" name="mima">
+        </div>
+        <!--输入账号密码判断的地方-->
+        <div class="panduan"></div>
+        <div class="registerAndForget">
+            <a href="register.html" class="left">免费注册</a>
+            <a href="" class="right">忘记密码？</a>
+        </div>
+        <div class="denglu_button">
+            <input id="denglu" type="submit" value="" >
+        </div>
+	</form>
+        <div class="panduan"></div>
+        <div class="other_login">
+            <span>使用第三方账号登陆</span>
+            <a href="">新浪微博</a>
+            <a href="">微信</a>
+            <a href="">腾讯QQ</a>
+            <a href="">支付宝</a>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            Copyright © 2018 WanYangBookLazy.com All rights reserved from
+            <a href="" target="_blank">武汉物之联科技有限公司</a>
+        </div>
+    </footer>
+</body>
+</html>

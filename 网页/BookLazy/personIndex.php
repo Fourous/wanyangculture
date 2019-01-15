@@ -1,0 +1,219 @@
+<?php
+
+	session_start();
+	$username = $_SESSION['username'];
+	include('php/mysqli_connect.php');
+	
+	$sqlb = "SELECT * FROM user_info WHERE telephone={$username}";
+	if($resb=mysqli_query($dbc,$sqlb)){
+	$resultb=mysqli_fetch_array($resb);
+	}
+	else echo "database error";
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/person.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.js,js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo_01.png" height="50px" alt="">
+        </div>
+
+        <div class="userInfo">
+            <div class="userP">
+                <a href="" onmouseover="open()">
+                    <img class="user" src="img/wx.png" height="50px" alt="">
+                </a>
+            </div>
+            <div class="userList" style="display: none">
+                <div>
+                    <a href="">个人中心</a>
+                </div>
+                <div>
+                    <a href="">设置</a>
+                </div>
+                <div>
+                    <a href="">反馈</a>
+                </div>
+                <div>
+                    <a href="">帮助</a>
+                </div>
+                <div>
+                    <a href="index.html">退出</a>
+                </div>
+                <!--<ul>
+                    <li><a href="">个人中心</a></li>
+                    <li><a href="">设置</a></li>
+                    <li><a href="">反馈</a></li>
+                    <li><a href="">帮助</a></li>
+                    <li><a href="">退出</a></li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+</header>
+<!--<script type="text/javascript">
+    function open() {
+        $('.userList').show();
+    }
+</script>-->
+<div class="nav">
+    <div class="nav_content">
+        <ul>
+            <li class="active"><a href="personIndex.php">个人中心</a></li>
+            <li><a href="zhanghao.html">账号设置</a></li>
+            <li><a href="guanzhu.php">我的关注</a></li>
+            <li><a href="jieyue.php">我的借阅</a></li>
+            <li><a href="">我的共享</a></li>
+            <li><a href="shoucang.php">我的收藏</a></li>
+            <li><a href="zhifu.html">我的钱包</a></li>
+        </ul>
+    </div>
+</div>
+<div class="personal_content">
+    <div class="personal_message">
+        <div class="max_pic">
+            <img src="img/logo_01.png" height="150px" alt="">
+            <div class="left">
+                <a href="">0</a>
+                <br>
+                <span>关注</span>
+            </div>
+            <div class="right">
+                <a href="">0</a>
+                <br>
+                <span>粉丝</span>
+            </div>
+        </div>
+    </div>
+    <div class="person_section">
+        <div class="section_nr">
+            <div class="section_padding">
+                <!--<form>-->
+                    <div class="section_form section_user-nick-name">
+                        <label class="section_form-label">昵称：</label>
+                        <div class="section_form-content">
+                            <div class="section_input">
+                                <!--<input autocomplete="off" placeholder="你的昵称" type="text"  class="section_input-in">-->
+                                <span class="section_username" id = "nickname"><?php echo $resultb['nickname']; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-rel-name">
+                        <label class="section_form-label">用户名：</label>
+                        <div class="section_form-content">
+                            <span class="section_username" id = "username"><?php echo $resultb['telephone'];?></span>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-sign">
+                        <label class="section_form-label" ">我的签名：</label>
+                        <div class="section_form-content">
+                            <div class="section_text-area">
+                                <!--<textarea placeholder="设置您的签名"  rows="2" autocomplete="off"  class="section_text-area-in" style="min-height: 33px;"></textarea>-->
+                                <span class="section_username" id = "signature"><?php echo $resultb['signature']; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_formsection_user-sex">
+                        <label class="section_form-label">性别：</label>
+                        <div class="section_form-content">
+                            <div class="section_input">
+                                <!--<input type="radio" name="gender" value="radio" checked="true">男
+                                <input type="radio" name="gender" value="radio">女-->
+                                <span class="section_username" id = "gender"><?php echo $resultb['sex']; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-data">
+                        <label class="section_form-label">生日：</label>
+                        <div class="section_form-content">
+                            <div class="section_input">
+                                <!--<input autocomplete="off" placeholder="你的出生日期" type="text"  class="section_input-in">-->
+                                <span class="section_username" id = "birthday"><?php echo $resultb['birthday']; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-local">
+                        <label class="section_form-label">所在地：</label>
+                        <div class="section_form-content">
+                            <div class="section_input">
+                                <!--<select name="local" id="local">
+                                    <option value="">选择地区</option>
+                                    <option value="">北京市</option>
+                                    <option value="">上海市</option>
+                                    <option value="">天津市</option>
+                                    <option value="">重庆市</option>
+                                    <option value="">河北省</option>
+                                    <option value="">山西省</option>
+                                    <option value="">内蒙古自治区</option>
+                                    <option value="">黑龙江省</option>
+                                    <option value="">吉林省</option>
+                                    <option value="">辽宁省</option>
+                                    <option value="">陕西省</option>
+                                    <option value="">甘肃省</option>
+                                    <option value="">青海省</option>
+                                    <option value="">新疆维吾尔自治区</option>
+                                    <option value="">宁夏回族自治区</option>
+                                    <option value="">山东省</option>
+                                    <option value="">河南省</option>
+                                    <option value="">江苏省</option>
+                                    <option value="">浙江省</option>
+                                    <option value="">安徽省</option>
+                                    <option value="">江西省</option>
+                                    <option value="">福建省</option>
+                                    <option value="">台湾省</option>
+                                    <option value="">湖北省</option>
+                                    <option value="">湖南省</option>
+                                    <option value="">广东省</option>
+                                    <option value="">广西壮族自治区</option>
+                                    <option value="">海南省</option>
+                                    <option value="">四川省</option>
+                                    <option value="">云南省</option>
+                                    <option value="">贵州省</option>
+                                    <option value="">西藏自治区</option>
+                                    <option value="">香港特别行政区</option>
+                                    <option value="">澳门特别行政区</option>
+                                </select>-->
+                                <span class="section_username" id = "address"><?php echo $resultb['address']; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-rel-name">
+                        <label class="section_form-label">手机号码：</label>
+                        <div class="section_form-content">
+                            <span class="section_username" id = "phone"><?php echo $resultb['telephone']; ?></span>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-rel-name">
+                        <label class="section_form-label">微信号：</label>
+                        <div class="section_form-content">
+                            <span class="section_username" id = "wechat"><?php echo $resultb['wechat']; ?></span>
+                        </div>
+                    </div>
+                    <div class="section_form section_user-rel-name">
+                        <label class="section_form-label">邮箱：</label>
+                        <div class="section_form-content">
+                            <span class="section_username" id = "email" ><?php echo $resultb['email']; ?></span>
+                        </div>
+                    </div>
+                    <!--<div class="section_form-group">
+                        <div class="section_form-offset">
+                            <button class="section_form-btn" type="submit"> 保存</button>
+                        </div>
+                    </div>-->
+                <!--</form>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

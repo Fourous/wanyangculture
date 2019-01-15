@@ -1,0 +1,69 @@
+<view class='contain'>
+
+<view class='backclass'>
+<image  class='classpng' src='/pages/images/backwany.png'></image>
+</view>
+
+<view class='acc'>
+<text class='texm'>账户余额：</text>
+<text class='money'>{{balance}}</text>
+<text class='moneyclss'>书懒币</text>
+</view>
+
+<view class='recharge'>
+
+<view class='txtcharge'>
+<text class='txtc'>购买</text>
+<text class='txtc1c'>1元=10书懒币</text>
+</view>
+
+<view class='btnview'>
+<!--第一行的btn-->
+<view class='btnone'>
+
+<view class='wider'>
+
+<view class="btnmon1 {{one?'active':''}}" bindtap='one' >
+<text class='viewmon'>充值10元</text>
+<text class='view_adver'>冲10送0</text>
+</view>
+
+</view>
+
+<view class='wider'>
+<view class="btnmon2 {{two?'active':''}}" bindtap='two' >
+<text class='viewmon'>充值20元</text>
+<text class='view_adver'>冲20送50</text>
+</view>
+
+</view>
+
+<!-- <button class="btnmon1 {{one?'active':''}}" bindtap='one'>充值10元</button>
+<button class="btnmon2 {{two?'active':''}}" bindtap='two'>充值20元</button> -->
+</view>
+
+<!--第二行-->
+<view class='btntwo'>
+
+<view class='wider'>
+<view class="btnmon3 {{three?'active':''}}" bindtap='three' >
+<text class='viewmon'>充值50元</text>
+<text class='view_adver'>冲50送150</text>
+</view>
+</view>
+<view class='wider'>
+<view class="btnmon4 {{four?'active':''}}" bindtap='four' >
+<text class='viewmon'>充值100元</text>
+<text class='view_adver'>冲100送500</text>
+</view>
+</view>
+</view>
+</view>
+</view>
+
+
+<view class='buttonclick'>
+<button class='butclick' bindtap='rechargemoney'>立即充值</button>
+</view>
+
+</view>

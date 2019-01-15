@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BookLazy</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    </head>
+    <body>
+    <!--标题栏-->
+    <header>
+        <div class="header">
+            <div class="index_container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_01.png" alt="BookLazy" height="110px">
+                    </a>
+                </div>
+                <div class="loginAndRegister">
+                    <a href="login.html">[登录]</a>
+                    <a href="register.html">[免费注册]</a>
+                </div>
+                <div class="index_nav">
+                    <ul>
+                        <li><a class="sel" href="#">首页</a></li>
+                        <li><a href="introduction.html">产品简介</a></li>
+                        <li><a href="jiage.html">服务价格</a></li>
+                        <li><a href="newbook.html">新书推荐</a></li>
+                        <li><a href="xinwen.html">新闻资讯</a></li>
+                        <li><a href="guanyu.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--图片轮换-->
+    <div id="carousel-example-generic" class="carousel slide bannera" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+            <li class="" data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li class="" data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner big_img" role="listbox">
+            <div class="item active">
+                <a href="#">
+                    <img src="img/book1.jpeg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/book2.jpg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/book4.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <a href="#carousel-example-generic" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+    </div>
+    <!--阅读方式-->
+    <div class="main">
+        <div class="index_container">
+            <div class="index_nav">
+                <ul id="switcher">
+                    <li><a class="sel" id="six" href="">智能阅读机</a></li>
+                    <li><a href="" id="seven">成就和成长</a></li>
+                    <li><a href="">驱动式阅读</a></li>
+                    <li><a href="">驱动式阅读</a></li>
+                    <!--<li><button class="sel" id="six">智能阅读机</button></li>
+                    <li><button id="seven">成就和成长</button></li>
+                    <li><button>驱动式阅读</button></li>
+                    <li><button>驱动式阅读</button></li>-->
+                </ul>
+            </div>
+            <div class="nr">
+                <div class="six">
+                    <div class="m_left">
+                        <div class="m_title">
+                            <strong>智能借阅机.</strong>
+                            助力产品升级
+                        </div>
+                        <div class="m_desc">
+
+                            BOOKLAZY智能共享图书馆
+                            <br>
+
+                            无人值守新租赁，自助借阅更省心
+                            <br>
+
+                            随机解锁码，开柜取书，方便快捷；
+                        </div>
+                    </div>
+                    <div class="m_right">
+                        <img src="img/2.2.jpg" height="500px" alt="">
+                    </div>
+                </div>
+                <div class="seven">
+                    <div class="m_left">
+                        <div class="m_title">
+                            <strong>成就和成长</strong>
+                            驱动式阅读
+                        </div>
+                        <div class="m_desc">
+                            读书难坚持？没有动力？<br>
+                            <strong style="color:#63B50C;">
+                                BOOKLAZY用游戏化排行和社交化交友</strong>
+                            <br>
+                            提高用户对阅读的仪式感和成就感。
+                        </div>
+                        <p class="ep">
+                            <img src="img/2.4.jpg" height="200px">
+                        </p>
+                    </div>
+                    <div class="m_right">
+                        <img src="img/2.1.jpg" height="450px" alt="">
+                    </div>
+                </div>
+                <!--<div class="eight">
+                    <div class="m_left">
+                        <div class="m_title"></div>
+                        <div class="m_desc"></div>
+                    </div>
+                    <div class="m_right">
+                        <img src="img/007.png" alt="">
+                    </div>
+                </div>
+                <div class="nine">
+                    <div class="m_left">
+                        <div class="m_title"></div>
+                        <div class="m_desc"></div>
+                    </div>
+                    <div class="m_right">
+                        <img src="img/003.png" alt="">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index_nr.js"></script>
+    <!--<script type="text/javascript">
+        $('#switcher li').click(function () {
+            var index=$("#switcher li").index(this);
+            $(this).addClass("sel").sibling().removeClass(".sel");
+            $(".nr div").eq(index).show().sibling().hide();
+        });
+    </script>-->
+    <!--微信联系栏-->
+    <div class="lx">
+        <div class="index_wx">
+            <img src="img/wx.png" height="148px" alt="">
+            <br>
+            <a href="">微信扫一扫</a>
+        </div>
+    </div>
+    <div class="gy_container">
+        <div class="gy_row">
+            <div class="shou_three">联系我们</div>
+            <div class="gy_col-md-4 shou_four">
+                <h1>万洋网络科技有限公司</h1>
+                <p class="p1">咨询热线：888-888-8888</p>
+                <p class="p2">渠道合作：</p><p>万先生 13088888888</p>
+                <p class="p3">邮箱：marketing@bookjia.com</p>
+                <p class="p4">公司地址：万洋市万洋1979广场8号楼8A</p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            Copyright © 2018 WanYangBookLazy.com All rights reserved from
+            <a href="" target="_blank">武汉物之联科技有限公司</a>
+        </div>
+    </footer>
+    </body>
+</html>

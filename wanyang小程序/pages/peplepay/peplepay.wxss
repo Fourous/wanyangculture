@@ -1,0 +1,99 @@
+.personpay {
+  width: 100%;
+  height: 100%;
+}
+.persontxt{
+  width: 100%;
+  height: 450rpx;
+} 
+.circle{
+  height: 250rpx;
+  width: 250rpx;
+  margin: 0px auto;
+  margin-top: 100rpx;
+  border: 10rpx solid rgb(172,148,125);
+  border-radius: 100%;
+}
+.moneyadd{
+  width: 50px;
+  margin: 0px auto;
+  margin-top: 40rpx;
+}
+.money{
+  font-size: 34px;
+  color: rgb(172,148,125);
+}
+.moneylast {
+  font-size: 14px;
+  color: black;
+}
+.payistxt {
+  font-size: 12px;
+  color: #ccc;
+  display: block;
+  text-align: center;
+}
+.vip{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0px auto;
+  border-bottom: solid 2rpx #ccc;
+  border-top: solid 2rpx #ccc;
+}
+.viptxt {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+.vipis{
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+.realpay{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0px auto;
+}
+.realtxt{
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+.realmoney{
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+.company{
+  width: 90%;
+  height: 200rpx;
+  margin: 0px auto;
+}
+.comname{
+  font-size: 14px;
+  display: block;
+}
+.time{
+  font-size: 14px;
+  display: block;
+}
+.personbtn {
+  width: 100%;
+  height: 100rpx;
+}
+.backbtn{
+  width: 60%;
+  height: 100%;
+  font-size: 23px;
+  line-height: 100rpx;
+  color: white;
+  background-color: rgb(172,148,125);
+  border-radius: 15rpx;
+}
+
+
+
+

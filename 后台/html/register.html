@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="index_container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_01.png" alt="BookLazy" height="110px">
+                    </a>
+                </div>
+                <div class="headerName">
+                    <!--<span class="register_headerName"> | 欢迎注册 </span>-->
+                    | 欢迎注册
+                </div>
+                <div class="advice">
+                    <a href="">建议反馈</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--注册界面-->
+    <div class="register_main">
+        <div class="register_content">
+            <ol class="register_progressBar">
+                <!--<p>注册进度条</p>
+                &lt;!&ndash;暂时搞不来&ndash;&gt;-->
+                <li class="barLeft">
+                    <div class="bar_l">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <div class="all"></div>
+                    </div>
+                    <div class="barCenter" style="margin-left: 185.165px;*margin-left: -15px! important;">1</div>
+                    <div class="barLM">填写注册账号信息</div>
+                </li>
+                <li class="barRight">
+                    <div class="bar_r">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <div class="all"></div>
+                    </div>
+                    <div class="barCenter" style="margin-left: 185.165px;*margin-left: -15px! important;">2</div>
+                    <div class="barRM">注册成功</div>
+                </li>
+            </ol>
+            <div class="register_nr">
+                <div class="register_nr_nr">
+				<form action="register.php" method="post">
+                    <div class="nr_erro"></div>
+                    <div class="re_zhanghao">
+                        <label for="zhanghao">账号:</label>
+                        <input id="zhanghao"type="text" placeholder="仅供输入手机号码" name="telephone">
+                    </div>
+                    <div class="interval">
+                        用于登录及找回密码使用
+                    </div>
+                    <div class="re_password">
+                        <label for="mima">密码:</label>
+                        <input id="mima"type="password" placeholder="服务密码" name="password">
+                    </div>
+                    <div class="interval">
+                        6-16位数字或字母，区分大小写
+                    </div>
+                    <div class="re_password">
+                        <label for="remima">重输:</label>
+                        <input id="remima"type="password" placeholder="服务密码" name="repassword">
+                    </div>
+                    <div class="interval"></div>
+                    <div class="xieyi">
+                        <a href="">《服务协议》</a>
+                    </div>
+                    <div class="re_button">
+                        <input class="register_button" type="submit" value="同意协议并注册" >
+                    </div>
+				</form>
+                </div>
+                <div class="register_nr_atention">
+                    <div class="atention_bg">
+                    </div>
+                    <div class="atention_nr">
+                        <h6>温馨提示</h6>
+                        <p>1、为了保障您的账户安全，请尽量减少使用简单的密码，如：111111,123456</p>
+                        <p>2、为了保障您的账号安全，请及时完善个人信息。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            Copyright © 2018 WanYangBookLazy.com All rights reserved from
+            <a href="" target="_blank">武汉物之联科技有限公司</a>
+        </div>
+    </footer>
+</body>
+</html>

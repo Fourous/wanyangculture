@@ -1,0 +1,14 @@
+/* pages/contactimg/contactimg.wxss */
+.contain{
+  height: 100%;
+  width: 100%;
+}
+.cs_button {
+  height: 200rpx;
+  width: 200rpx;
+}
+.cs_image {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+}

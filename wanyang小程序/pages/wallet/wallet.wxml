@@ -1,0 +1,38 @@
+  <view class='user'>
+
+  <view class='avatar'>
+   <image class='userimg' src='{{image}}'></image>
+  </view>
+
+  <view class='username'>
+  <text class='usertxt'>{{username}}</text>
+  </view>
+     
+</view>
+
+<view class='btn'> 
+    <view bindtap='vip' class='square'>
+    <image class='icon' src='/pages/images/qianbao.png'></image>
+    <text class='buttontext'>充值套餐</text>
+    </view>
+
+  <view bindtap='recharge' class='square'>
+    <image class='icon' src='/pages/images/qianbao.png'></image>
+    <text class='buttontext'>我的余额</text>
+  </view>
+
+  <view bindtap='forgift' class='square'>
+    <image class='icon' src='/pages/images/jieyue.png'></image>
+    <text class='buttontext'>押金缴纳</text>
+  </view>
+
+  <view bindtap='exchange' class='square'>
+    <image class='icon' src='/pages/images/gongxiang.png'></image>
+    <text class='buttontext'>兑换码</text>
+  </view>
+  <view bindtap='buyrecord' class='square'>
+    <image class='icon' src='/pages/images/buyrecord.png'></image>
+    <text class='buttontext'>消费记录</text>
+  </view>
+</view>
+  

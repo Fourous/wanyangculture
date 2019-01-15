@@ -1,0 +1,89 @@
+<!-- <scroll-view scroll-y="true" bindscrolltolower="">
+  <view class="skeleton-group" wx:for="{{collect}}" wx:key="{{index}}">
+    <navigator url='../book/book?id={{item.bookid}}'>
+      <view class="skeleton-group-cover">
+        <view class='book'>
+          <image class='book' src="{{item.bookpicture}}" mode='scaleToFill' />
+        </view>
+      </view>
+      <view class="skeleton-group-text">
+        <view class="skeleton-group-title">{{item.bookname}}</view>
+        <view class="skeleton-group-desc">
+          <view>{{item.edition}}</view>
+          <view>{{item.author}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</scroll-view> -->
+
+<!-- <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent"> -->
+ <!-- <navigator url='../book/book?id={{item.bookid}}'>
+  <view class='bookone'>
+  
+    <view class='nihao' wx:for="{{list}}" wx:key="{{index}}">
+<view class='imgpic'>
+<image class='book' src="{{bookpicture[index]}}" mode='scaleToFill' />
+</view>
+         
+<view class='bookother'>
+        <view class='name'>
+          <text>{{item.bookname}} </text>
+        </view>
+</view>      
+   
+    </view>
+  </view>
+
+</scroll-view> -->
+
+<!--pages/bookback/bookback.wxml-->
+<!--这里是所有书籍返回的共用点-->
+
+<view class='bookback'>
+<view class='bookone'>
+<view wx:for="{{collect}}" wx:key="{{index}}">
+<view class='book_item'>
+<navigator url='../book/book?id={{item.bookid}}'>
+
+        <view class='bookpic'>
+        <image class='bookimg' src="{{item.tag}}"></image>
+        </view>
+
+        <view class='book_detail'>
+
+          <view class='bookname'>
+            <text class='booktxt'>{{item.bookname}}</text>
+          </view>
+
+        
+          <view class='bookother'>
+          <view class='auedi'>
+          <text class='bookdet'>作者：{{item.author}}</text>
+         
+          </view>
+          <view class='auedi'>
+          <text class='bookdet'>出版社:{{item.edition}}</text>
+          </view>
+          <view class='bookdiv'>
+          <text class='bookdetype'>{{item.booktype}}</text>
+          </view>
+          </view>
+
+   </view>
+  
+           <view class='hot'>
+          <text class='hotnum'>热度：{{item.hotnum}}</text> 
+          </view> 
+
+  </navigator>
+</view>
+
+       
+
+
+</view>
+      
+</view>
+</view>
+

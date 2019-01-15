@@ -1,0 +1,23 @@
+<!--pages/buyrecord/buyrecord.wxml-->
+<view class='container'>
+
+<view class='one'>
+<view class='moneynum'>
+<text class='num'>-{{money[4]}}</text>
+</view>
+
+<!-- <view class='buytime'>
+
+<view class='lendtime'>
+<text class='ltime'>{{lendtime}}</text>
+</view>
+
+<view class='returntime'>
+<text class='rtime'>{{returntime}}</text>
+</view>
+
+</view> -->
+
+</view>
+
+</view>

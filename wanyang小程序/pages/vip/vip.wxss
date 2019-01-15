@@ -1,0 +1,155 @@
+
+.title {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  top: 0;
+  border-bottom: white;
+  background-color: white;
+  /* border-bottom: solid white 1rpx; */
+  box-shadow: 0px 1px 10px #ccc;
+}
+.bot {
+  display: inline-block;
+  height: 100%;
+  width: 100rpx;
+  text-align: center;
+  
+}
+.bot.acv {
+  border-bottom: solid 4rpx red;
+}
+
+.btw {
+  padding-top: 120rpx;
+  height: 100%;
+  width: 100%;
+  /* position: fixed; */
+  /* background-color: whitesmoke; */
+}
+
+.mon{
+
+  font-size: 15px;
+  color: #ccc;
+  line-height: 80rpx;
+  
+}
+
+.year {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 80rpx;
+  
+}
+.vipic {
+
+  /* margin-top: 120rpx; */
+  text-align: center;
+  width: 100%;
+  height: 400rpx;
+}
+.vip {
+  border-radius: 20px;
+  width: 90%;
+  height: 400rpx;
+}
+
+.vipintrodu {
+margin-top: 20rpx; 
+margin-left: 100rpx;
+}
+
+.intrudece {
+  font-size: 12px;
+}
+.btnselec{
+  margin-top: 20rpx;
+  margin-left: 100rpx;
+  height: 120rpx;
+}
+
+.select1 {
+  border:solid #ccc 1rpx;
+  width: 200rpx;
+  height: 100rpx;
+  display: inline-block;
+  margin-left: 40rpx;
+  border-radius: 8px;
+}
+
+.select1.active{
+  border: red 1rpx solid;
+}
+
+.select1pri{
+  margin-left: 15rpx;
+  font-size: 10px;
+  color: black;
+  font-weight: 300;
+}
+.someintruce{
+  margin-top: 0px;
+  width: 100%;
+  /* text-align: center; */
+}
+.somein {
+  width: 100%;
+  font-size: 12px;
+  color: #ccc;
+  /* margin-left: 40rpx; */
+}
+.someout {
+  width: 100%;
+  font-size: 12px;
+  height: 200rpx;
+}
+
+
+
+.foot {
+  border-top:1px solid white;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 150rpx;
+  bottom: 0px;
+  box-shadow: 0px -1px 50px #ccc;
+}
+
+
+.price{
+  float: left;
+  height: 100%;
+  width: 50%;
+  font-size: 35px;
+  text-align: center;
+  line-height: 150rpx;
+}
+.pricenum {
+  font-size: 50px;
+  line-height: 150rpx;
+}
+.pricetx{
+  font-size: 20px;
+  line-height: 150rpx;
+}
+.purbtn{
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+.purchase{
+  margin-top: 35rpx;
+  margin-right: 40rpx;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  height: 80rpx;
+  width: 200rpx;
+  font-size: 12px;
+  line-height: 80rpx;
+}
+
+

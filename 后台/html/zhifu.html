@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>支付界面</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/person.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo_01.png" height="50px" alt="">
+            </div>
+            <div class="userInfo">
+                <div class="userP">
+                    <a href="">
+                        <img class="user" src="img/wx.png" height="50px" alt="">
+                    </a>
+                </div>
+                <div class="userList" style="display: none">
+                    <div>
+                        <a href="">个人中心</a>
+                    </div>
+                    <div>
+                        <a href="">设置</a>
+                    </div>
+                    <div>
+                        <a href="">反馈</a>
+                    </div>
+                    <div>
+                        <a href="">帮助</a>
+                    </div>
+                    <div>
+                        <a href="">退出</a>
+                    </div>
+                    <!--<ul>
+                        <li><a href="">个人中心</a></li>
+                        <li><a href="">设置</a></li>
+                        <li><a href="">反馈</a></li>
+                        <li><a href="">帮助</a></li>
+                        <li><a href="">退出</a></li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="nav">
+        <div class="nav_content">
+            <ul>
+                <li><a href="personIndex.php">个人中心</a></li>
+                <li><a href="zhanghao.html">账号设置</a></li>
+                <li><a href="">我的关注</a></li>
+                <li><a href="">我的借阅</a></li>
+                <li><a href="">我的共享</a></li>
+                <li><a href="">我的收藏</a></li>
+                <li class="active"><a href="zhifu.html">我的钱包</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--个人账户-->
+    <div class="personal_fir_acc">
+        <div class="personal_fir_container">
+            <div class="account">
+                <div class="touxiang">
+                    <img src="./img/touxiang.jpg">
+                </div>
+                <div class="hello">
+                        <span>
+                            晚上好！
+                            <a href="#">吕佳琪</a>
+                        </span>
+                    <div class="update">
+                        <a href="#">修改头像</a>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="name">
+                        账号：<a href="#">158****4017</a>
+                    </div>
+                    <div class="shu">|</div>
+                    <div class="last_time">
+                        上次登录时间：
+                        <div class="time">2018.02.23 23:00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--账户余额-->
+    <div class="balance_sec_acc">
+        <div class="balance_sec_container">
+            <div class="qblogo">
+                <img src="./img/qblogo.jpg"><span>我的钱包</span>
+            </div>
+            <div class="balance">账户余额</div>
+            <a href="#" class="show_balance">显示余额</a>
+            <div class="balance_money">**,**元</div>
+            <ul>
+                <li><a href="#"><input type="button" name="chongzhi" value="充值"></a></li>
+                <li><a href="tixian.html"><input type="button" name="tixian" value="提现"></a></li>
+                <li><a href="zhuanzhang.html"><input type="button" name="zhuanzhang" value="转账"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--vip套餐-->
+    <div class="zhifu_second_container">
+        <div class="zhifu_second_content">
+            <div class="vip_choice">
+                选择套餐进行购买
+            </div>
+            <div class="zhifu_second_main">
+                <div class="vip1">
+                    <a href="#">
+                        <img src="./img/vip_c.png">
+                        <h2>年卡会员198.0元</h2>
+                        <h5>一年之内免费阅读，次数不限</h5>
+                    </a>
+                </div>
+                <div class="vip2">
+                    <a href="#">
+                        <img src="./img/vip_c.png">
+                        <h2>季卡会员118.0元</h2>
+                        <h5>一季度之内免费阅读，次数不限</h5>
+                    </a>
+                </div>
+                <div class="vip3">
+                    <a href="#">
+                        <img src="./img/vip_c.png">
+                        <h2>月卡会员58.0元</h2>
+                        <h5>一个月之内免费阅读，次数不限</h5>
+                    </a>
+                </div>
+                <div class="vip4">
+                    <a href="#">
+                        <img src="./img/vip_c.png">
+                        <h2>普通会员88.8元</h2>
+                        <h5>借书次数为50次，用完为止，时间不限</h5>
+                    </a>
+                </div>
+                <div class="vip5">
+                    <a href="#">
+                        <img src="./img/vip_c.png">
+                        <h2>普通会员48.8元</h2>
+                        <h5>借书次数为30次，用完为止，时间不限</h5>
+                    </a>
+                </div>
+                <div class="vip6">
+                    <a href="#">
+                        <img src="./img/vip_c.png">
+                        <h2>普通会员22.8元</h2>
+                        <h5>借书次数为10次，用完为止，时间不限</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="zhifu_second_buy">
+                <div class="buy_content">
+                    <form action="" method="post">
+                        选择您购买的套餐：
+                        <select name="which_vip">
+                            <option value="vip1" selected="selected">&nbsp;年卡会员&nbsp;</option>
+                            <option value="vip2">&nbsp;季卡会员&nbsp;</option>
+                            <option value="vip3">&nbsp;月卡会员&nbsp;</option>
+                            <option value="vip4">&nbsp;普通会员88.8&nbsp;</option>
+                            <option value="vip5">&nbsp;年卡会员48.8&nbsp;</option>
+                            <option value="vip6">&nbsp;年卡会员22.8&nbsp;</option>
+                        </select><br><br>
+                        选&nbsp;择&nbsp;支&nbsp;付&nbsp;方&nbsp;式 &nbsp;：
+                        <input type="radio" name="zfmethod">&nbsp;支付宝&nbsp;
+                        <input type="radio" name="zfmethod">&nbsp;微信&nbsp;
+                        <input type="radio" name="zfmethod">&nbsp;银行卡&nbsp;<br>
+                        <input type="submit" name="submit" value="购买" class="tijiao_button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

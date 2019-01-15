@@ -1,0 +1,18 @@
+<view class='container'>
+<view class='backgro'>
+<image  class='classpng' src='/pages/images/backwany.png'></image>
+</view>
+
+  <view class="inputView">
+    <text class='yajingtxgt'>押金金额</text>
+    <text class='mongnum'>0.00</text>
+    <!-- <text>押金状态：{{forgift}}</text> -->
+  </view>
+
+  <view class="otherview">
+  <text class='sgta'>押金状态</text>
+  <text class='stat'>已缴纳|未缴纳</text>
+  </view>
+  <button class="exchange"  size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="handin" hidden='{{Sta}}'>交押金</button>
+  <!-- <button class="exchange" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="handout" hidden='{{!Sta}}'>退押金</button> -->
+</view>

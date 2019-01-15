@@ -1,0 +1,29 @@
+<view class= "container">
+
+ <view class = "bookname_item">
+  <text class= "input_bookname" >{{bookname}}</text>
+ </view>
+
+
+ <view class= "comment_item">
+  <textarea class= "textarea_comment" placeholder= "请输入书评" maxlength= "300" auto-height= "true" show-confirm-bar = "true" bindinput= "commentInput">
+  </textarea>
+ </view>
+<view class='php'>
+      <image class='img_negative' mode = "widthFix" bindtap='bindImgPositiveTap' src='{{imgs[0]}}'></image>
+
+      <image class='cancel_btn {{imgs[0]=="../images/catchphpoto.png"?"hidder":""}}' src='../images/cancel_btn.png' style='width:30rpx;height:30rpx' data-id='0' bindtap='cancelImg'></image>
+    </view>
+ <view class='tip' style='display:inline-block;vertical-align:top;float:right;'>
+    300字数以下
+  </view>
+
+ <!-- <view class= "image_item">
+  <image class= "img" src = "{{tempFilePaths[0]}}"></image>
+ </view> -->
+
+ <view class= "submit_item">
+  <button class= "submit_btn" bindtap= "submitBtnTap">{{btnType}}</button>
+ </view>
+ 
+</view>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新书推荐</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head>
+
+
+
+<body>
+<!------------>
+    <!--标题栏-->
+    <header>
+        <div class="header">
+            <div class="index_container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_01.png" alt="BookLazy" height="110px">
+                    </a>
+                </div>
+                <div class="loginAndRegister">
+                    <a href="login.html">[登录]</a>
+                    <a href="register.html">[免费注册]</a>
+                </div>
+                <div class="index_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="introduction.html">产品简介</a></li>
+                        <li><a href="jiage.html">服务价格</a></li>
+                        <li><a class="sel" href="newbook.html">新书推荐</a></li>
+                        <li><a href="xinwen.html">新闻资讯</a></li>
+                        <li><a href="guanyu.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+    <!--新书推荐部分-->
+	
+    <div class="book_command">
+        <div class="book_container">
+            <div class="book_list">
+                <div class="new_book first_book">
+				<!--AJAX-->
+					<script>
+					/*	$.ajax({
+								url:"recommend_book.php",
+								type :"POST",
+								data:{id:"listbook_1"},
+								dataType:"json",
+								success:function(data,textStatus){
+								$("#typeone").html(data.type);
+								$("#authorone").html("hswd");
+								$("#bookone").html(data.bookname);
+								$("#descone").html(data.brief);
+								}
+								});*/
+					</script>
+                    <div class="book_img">
+                        <img src="./img/first_book.jpg">
+                    </div>
+                    <div class="book_description">
+                        <div class="biaoqian">
+                            <span class="bq11" id = "typeone">文学</span>
+                            <!--<span class="bq12"></span>-->
+                            <span class="bq13" id = "authorone">严歌苓</span>
+                        </div>
+                        <div class="book_name" id = "bookone">
+                            <h2>严歌苓长篇小说力作/寻找那些平凡，谦卑背后的伟大意义 --《芳华》</h2>
+                            <hr>
+                        </div>
+                        <div book_desc id = "descone">
+                            <p>作为严歌苓创作的第22本长篇小说，这个故事来源于严歌苓的真实经历。上个世纪70年代初，12岁的严歌苓考入部队文工团，成为一名文艺女兵，经常下部队演出，足迹走遍西南各地。这段时期，因为早恋，她尝到了背叛的滋味和人情的冷暖。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_book second_book">
+					<script>
+							/*$.ajax({
+								url:"recommend_book.php",
+								type :"POST",
+								data:{id:"listbook_2"},
+								dataType:"json",
+								success:function(data,textStatus){
+								$("#typetwo").html(data.type);
+								$("#author2").html(data.author);
+								$("#book2").html(data.bookname);
+								$("#desc2").html(data.brief);
+								}
+								});*/
+					</script>
+                    <div class="book_img">
+                        <img src="./img/second_book.jpg">
+                    </div>
+                    <div class="book_description">
+                        <div class="biaoqian">
+                            <span class="bq21" id = "typetwo">散文</span>
+                            <!--<span class="bq22"></span>-->
+                            <span class="bq23" id = "author2">余秋雨</span>
+                        </div>
+                        <div class="book_name" id = "book2">
+                            <h2>华语文坛经典之作 --《孤独是生命的礼物》</h2>
+                            <hr>
+                        </div>
+                        <div book_desc id = "desc2">
+                            <p>本书收录了余光中,林清玄,白先勇,刘克襄,马家辉,朱天衣等知名作家的散文作品,还可在作家笔下看见关于前辈胡适,罗兰,林海音,潘人木等的往事回忆。这是一本关于孤独的的散文集子。作家们在书中谈论亲情,友谊,久别的故乡,逝去的时光,或直击主题,或慢慢铺叙。在他们的文字里,无一不彰显着对生命和孤独的思考和体悟。你的孤独和你所畏惧的,都将被时光铸造成刚。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_book third_book">
+					<script>
+							/*$.ajax({
+								url:"recommend_book.php",
+								type :"POST",
+								data:{id:"listbook_3"},
+								dataType:"json",
+								success:function(data,textStatus){
+								$("#typethree").html(data.type);
+								$("#author3").html(data.author);
+								$("#book3").html(data.bookname);
+								$("#desc3").html(data.brief);
+								}
+								});*/
+					</script>
+                    <div class="book_img">
+                        <img src="./img/third_book.jpg">
+                    </div>
+                    <div class="book_description">
+                        <div class="biaoqian">
+                            <span class="bq31" id = "typethree">悬疑推理</span>
+                            <span class="bq32" id = "author3">东野圭吾</span>
+                           <!-- <span class="bq33"></span>-->
+                            <!--<span class="bq34">小说</span>-->
+                        </div>
+                        <div class="book_name" id = "book3">
+                            <h2>我从来都没有太阳，所以不怕失去 -- 东野圭吾《白夜行》</h2>
+                            <hr>
+                        </div>
+                        <div book_desc id = "desc3">
+                            <p>《白夜行》是东野圭吾当之无愧的鸿篇巨制，全书故事跨越19年时间，登场人物超过50个，草蛇灰线伏脉千里，情节线索纵横交错又丝丝入扣，用一桩离奇命案牵出案件相关人跨越19年惊心动魄的故事、悲凉的爱情、吊诡的命运、令人发指的犯罪、白描又生动的社会图景、复杂人性的对决与救赎，读来令人叹为观止。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_book fourth_book">
+					<script>
+							/*$.ajax({
+								url:"recommend_book.php",
+								type :"POST",
+								data:{id:"listbook_4"},
+								dataType:"json",
+								success:function(data,textStatus){
+								$("#typefour").html(data.type);
+								$("#author4").html(data.author);
+								$("#book4").html(data.bookname);
+								$("#desc4").html(data.brief);
+								}
+								});*/
+					</script>
+                    <div class="book_img">
+                        <img src="./img/fourth_book.jpg">
+                    </div>
+                    <div class="book_description">
+                        <div class="biaoqian">
+                            <span class="bq31" id = "typefour">美国文学</span>
+                            <span class="bq32" id = "author4"></span>
+                            <!--<span class="bq33"></span>-->
+                            <!--<span class="bq34">小说</span>-->
+                        </div>
+                        <div class="book_name" id = "book4">
+                            <h2>没有谁是一座孤岛，每本书都是一个世界。--加·泽文 《岛上书店》</h2>
+                            <hr>
+                        </div>
+                        <div book_desc id = "desc4">
+                            <p> A·J·费克里，人近中年，在一座与世隔绝的小岛上，经营一家书店。命运从未眷顾过他，爱妻去世，书店危机，就连值钱的宝贝也遭窃。他的人生陷入僵局，他的内心沦为荒岛。就在此时，一个神秘的包袱出现在书店中，意外地拯救了陷于孤独绝境中的A·J·费克里，成为了连接他和妻姐伊斯梅、警长兰比亚斯、出版社女业务员阿米莉娅之间的纽带，为他的生活带来了转机。小岛上的几个生命紧紧相依，走出了人生的困境，而所有对书和生活的热爱都周而复始，愈加汹涌。 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book_right">
+            	<div class="wx_erweima">
+					<h2>扫码阅读</h2>
+					<img src="./img/wx.png">
+            	</div>
+                <div class="about_read">
+					<div class="read_box">
+						<h3>相关阅读</h3>
+						<hr>
+						<li>
+							<img src="./img/rightbook1.jpg">
+							<div class="name_author">
+								<p>《愿有人陪你颠沛流离》</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/rightbook2.jpg">
+							<div class="name_author"> 
+								<p>《影响力》</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/rightbook3.jpg">
+							<div class="name_author">
+								<p>《追风筝的人》</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/rightbook4.jpg">
+							<div class="name_author">
+								<p>《我们仨》</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/rightbook5.jpg">
+							<div class="name_author">
+								<p>《天才在左 疯子在右》</p>
+							</div>
+						</li>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gy_container">
+        <div class="gy_row">
+            <div class="shou_three">联系我们</div>
+            <div class="gy_col-md-4 shou_four">
+                <h1>万洋网络科技有限公司</h1>
+                <p class="p1">咨询热线：888-888-8888</p>
+                <p class="p2">渠道合作：</p><p>万先生 13088888888</p>
+                <p class="p3">邮箱：marketing@bookjia.com</p>
+                <p class="p4">公司地址：万洋市万洋1979广场8号楼8A</p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            Copyright © 2018 WanYangBookLazy.com All rights reserved from
+            <a href="" target="_blank">武汉物之联科技有限公司</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<view class='container'>
+
+<view class='main'>
+
+    <view class='php'>
+      <image class='img_negative' mode = "widthFix" bindtap='bindImgPositiveTap' src='{{imgs[0]}}'></image>
+
+      <image class='cancel_btn {{imgs[0]=="../images/catchphpoto.png"?"hidder":""}}' src='../images/cancel_btn.png' style='width:30rpx;height:30rpx' data-id='0' bindtap='cancelImg'></image>
+    </view>
+
+   <view class="php">
+      <image class='img_negative' mode = "widthFix"  bindtap='bindImgNegativeTap' src='{{imgs[1]}}'></image>
+      <image class='cancel_btn {{imgs[1]=="../images/catchphpoto.png"?"hidder":""}}' src='../images/cancel_btn.png' style='width:30rpx;height:30rpx' data-id='1' bindtap='cancelImg'></image>
+    </view>
+
+    <view class='php'>
+      <image class='img_negative' mode = "widthFix"  bindtap='bindImgContentTap' src='{{imgs[2]}}'></image>
+      <image class='cancel_btn {{imgs[2]=="../images/catchphpoto.png"?"hidder":""}}' src='../images/cancel_btn.png' style='width:30rpx;height:30rpx' data-id='2' bindtap='cancelImg'></image>
+    </view>
+</view>
+
+ 
+
+  <view class='makeSure'>
+    <button class='button01' bindtap='bindSureTap'>确认捐书</button>
+  </view>
+
+</view>

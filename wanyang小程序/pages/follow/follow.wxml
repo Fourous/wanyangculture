@@ -1,0 +1,28 @@
+<!-- <view class='container'>
+  <view class='person' wx:for="{{name}}" wx:key="{{index}}">
+    <navigator class='headpic' url='../else_info/else_info?id={{uid[index].col_uid}}'>
+      <view class='pic'>
+        <image class='pic' src='../images/logo.png'></image>
+      </view>
+    </navigator>
+    <view class='name'>
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view> -->
+
+<view class='person' wx:for="{{uid0}}" wx:key="{{index}}">
+  <view class='user_av'>
+    <navigator url='../commentuserdetail/commentuserdetail?col_uid={{uid[index].col_uid}}'>
+      <view class='user_pic'>
+        <image class='user_avatar' src='{{item.tag}}'></image>
+      </view>
+
+    </navigator>
+
+    <view class='user_name'>
+      <text class='user_nickname'>{{item.info.nickname}}</text>
+    </view>
+
+  </view>
+</view>

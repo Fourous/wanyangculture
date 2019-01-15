@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family: '宋体';
+}
+.header{
+    width: 100%;
+    height: 100px;
+}
+.header img{
+    width: 100px;
+    height: auto;
+}
+.login_main{
+    width: 100%;
+    float: left;
+}
+.login_main img{
+    width: 100%;
+    height: auto;
+}
+.login_content{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    background: #ffff;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.index_main{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    background: #eee;
+}

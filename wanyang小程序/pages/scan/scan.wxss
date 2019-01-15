@@ -1,0 +1,44 @@
+/* pages/map/map.wxss */
+.container{
+  /* position: relative; */
+  width: 100%; 
+  height: 100%;
+}
+#Map{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.place_info {
+position: fixed;
+ z-index: 111;
+bottom: 0px;
+height: 300rpx;
+width: 100%;
+margin-left: 280rpx;
+}
+.place_info_parking{
+ font-size: 50rpx;
+ height: 200rpx;
+ width: 200rpx;
+ /* margin-left: 280rpx; */
+ border-radius: 50%;
+ background-color: red;
+ text-align: center;
+}
+.place_info_surplus{
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 20rpx;
+}
+.place_info_index{
+  width: 114rpx;
+  height: 100rpx;
+  margin: 0px auto;
+  margin-top: 30rpx;
+}

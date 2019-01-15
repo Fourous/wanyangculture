@@ -1,0 +1,113 @@
+<view class='container'>
+
+<view class='title'>
+
+<view class='bot {{flag?"acv":""}}'  bindtap='avtipage1'>
+<text class='mon'>杂志类</text>
+</view>
+<!-- bindtap='avtipage' -->
+<view class='bot {{flag?"":"acv"}}'  bindtap='avtipage2'>
+<text class='year'>全品类</text>
+</view>
+
+</view>
+
+
+<view class='btw' hidden='{{flag?"":"true"}}' >
+<!-- 这里是图片元素 -->
+<view class='vipic'>
+<image class='vip' src="{{pic1?'../images/vip1.png' : '../images/vip3.png'}}"></image>
+</view>
+<!-- 这里是图片下方的选择加上文字介绍 -->
+<view class='vipintrodu'>
+<text class='intrudece'>推荐您使用套餐</text>
+</view>
+<!-- 选择按钮 -->
+<view class='btnselec'>
+
+<view class="select1 {{pic1?'active':''}}" bindtap='avtipic2'>
+<text class='select1pri' >60 书懒币</text>
+</view>
+
+<view class="select1 {{pic1?'':'active'}}" bindtap='avtipic1'>
+<text class='select1pri' >360 书懒币</text>
+</view>
+
+</view>
+
+<view class='someintruce'>
+<text class='somein'>
+注意事项
+①会员借阅书籍免费次数：不限次数
+②会员借阅书籍免费本数：不限本数，但杂志类会员每次同时借阅≤2本，第3本开始按照正常计费：全品类会员每次同时借阅≤3本（不限书籍类别），第4本开始按照正常计费
+③会员借阅书籍免费时长：每本杂志类书籍免费时长为5天，超过5天开始按照正常计费；其余类别每本书籍免费时长为10天，超过10天开始按照正常计费
+</text>
+<text class='someout'>
+
+
+
+</text>
+</view>
+
+
+
+</view>
+
+<!-- 年卡 -->
+<view class='btw' hidden='{{flag?"true":""}}'>
+<!-- 这里是图片元素 -->
+<view class='vipic'>
+<image class='vip' src="{{pic2?'../images/vip2.png' : '../images/vip4.png'}}"></image>
+</view>
+<!-- 这里是图片下方的选择加上文字介绍 -->
+<view class='vipintrodu'>
+<text class='intrudece'>推荐您使用套餐</text>
+</view>
+<!-- 选择按钮 -->
+<view class='btnselec'>
+
+<view class="select1 {{pic2?'active':''}}" bindtap='avtipic4'>
+<text class='select1pri' >90 书懒币</text>
+</view>
+
+<view class="select1 {{pic2?'':'active'}}" bindtap='avtipic3'>
+<text class='select1pri' >540 书懒币</text>
+</view>
+
+</view>
+
+<view class='someintruce'>
+<text class='somein'>
+注意事项
+①会员借阅书籍免费次数：不限次数
+②会员借阅书籍免费本数：不限本数，但杂志类会员每次同时借阅≤2本，第3本开始按照正常计费：全品类会员每次同时借阅≤3本（不限书籍类别），第4本开始按照正常计费
+③会员借阅书籍免费时长：每本杂志类书籍免费时长为5天，超过5天开始按照正常计费；其余类别每本书籍免费时长为10天，超过10天开始按照正常计费
+</text>
+<text class='someout'>
+
+
+</text>
+</view>
+
+
+
+</view>
+
+
+
+
+
+<view class='foot'>
+
+<view class='price'>
+<text class='pricenum'>{{money}} </text>
+<text class='pricetx'>书懒币</text>
+</view>
+
+<view class='purbtn'>
+<button class='purchase' bindtap='choose'>购买</button>
+</view>
+
+</view>
+
+</view>

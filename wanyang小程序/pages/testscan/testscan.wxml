@@ -1,0 +1,11 @@
+<!--pages/testscan/testscan.wxml-->
+
+<view class='txtbtn'>
+<text class='textwd'>
+  这里是扫码开门出现的界面
+</text>
+</view>
+
+<view class='container'>
+<button class='test_btn' bindtap='bindtap'>立 即 开 门</button>
+</view>

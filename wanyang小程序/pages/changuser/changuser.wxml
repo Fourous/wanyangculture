@@ -1,0 +1,58 @@
+  <view class='user'>
+
+  <view class='avatar'>
+   <image class='userimg' src='{{image}}' bindtap='chavatar' ></image>
+  </view>
+
+  <view class='username'>
+  <text class='usertxt'>{{username}}</text>
+  </view>
+     
+</view>
+
+    <view class='btn'> 
+
+    <view bindtap='chnickname' class='square'>
+    <text class='buttontext'>昵称：{{username}}</text>
+    <image class='icon' src='/pages/images/rightgo.png'></image>
+    </view>
+
+<picker bindchange='bindsexch' value="{{sex}}" range='{{array}}'>
+  <view  class='square'>
+  <text class='buttontext'>性别：{{array[index]}}</text>
+    <image class='icon' src='/pages/images/rightgo.png'></image>
+  </view>
+ </picker>
+  <view bindtap='chwechat' class='square'>
+    
+    <text class='buttontext'>微信：{{weixinnum}}</text>
+    <image class='icon' src='/pages/images/rightgo.png'></image>
+  </view>
+
+  <view bindtap='chsign' class='square'>
+   
+    <text class='buttontext'>签名：{{signature}}</text>
+     <image class='icon' src='/pages/images/rightgo.png'></image>
+  </view>
+   <picker bindchange='chbirth'  mode="date" value="{{date}}" start="1990-09-01" end="2050-09-01">
+    <view  class='square'>
+    <text class='buttontext'>生日：{{date}}</text>
+    <image class='icon' src='/pages/images/rightgo.png'></image>
+  </view>
+    </picker>
+    
+    <view bindtap='exadress' class='square'>
+  
+    <text class='buttontext'>住址：{{localplace}}</text>
+      <image class='icon' src='/pages/images/rightgo.png'></image>
+  </view>
+    <view bindtap='chemail' class='square'>
+    <text class='buttontext'>邮箱：{{email}}</text>
+    <image class='icon' src='/pages/images/rightgo.png'></image>
+  </view>
+
+  <view class='savebtn'>
+  <button class='btnsava' bindtap='savachange'>确认更改</button>
+  </view>
+</view>
+  

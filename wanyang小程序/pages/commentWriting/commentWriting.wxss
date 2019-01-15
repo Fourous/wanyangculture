@@ -1,0 +1,83 @@
+
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+.bookname_item{
+  top: 0px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-bottom: solid 1px white;
+  box-shadow: 0px,1px,20px #ccc;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 18px;
+}
+
+
+.comment_item{
+  height: 400rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  font-size: 12px;
+  border-bottom: solid 1rpx #ccc;
+}
+
+.textarea_comment{
+  height: 100%;
+  margin-left: 0px;
+}
+
+.image_item{
+  height: 40%;
+}
+
+.img{
+  height: 100%;
+  width: 100%;
+}
+
+.submit_item{
+  height: 60rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+
+.submit_btn{
+  width: 97%;
+  height: 55rpx;
+  bottom: 2rpx;
+  background-color:#FF4040;
+  color: black;
+  line-height: 60rpx; 
+  font-size: 15px;
+}
+.tip{
+  text-align: right;
+  font-size: 11px;
+}
+.php{
+  display: inline-block;
+  /* margin-right: 100rpx;
+  margin-top: 300rpx; */
+  padding: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 2rpx;
+  margin: 10rpx;
+}
+.hidder{
+  display: none;
+}
+.img_negative{
+  width:90rpx;
+  height:90rpx
+
+}
+.cancel_btn{
+  position: relative;
+  top:-80rpx;
+  left: -8rpx;
+}

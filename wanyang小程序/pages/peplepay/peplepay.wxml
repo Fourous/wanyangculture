@@ -1,0 +1,31 @@
+<view class='personpay'>
+
+<view class='persontxt'>
+<view class='circle'>
+<view class='moneyadd'>
+<text class='money'>{{money}}</text>
+<text class='moneylast'> 币</text>
+</view>
+<text class='payistxt'>消费总计</text>
+</view>
+
+</view>
+
+<view class='vip'>
+<text class='viptxt'>vip折扣</text>
+<text class='vipis'>无</text>
+</view>
+
+<view class='realpay'>
+<text class='realtxt'>实际消费</text>
+<text class='realmoney'>{{money}} 书懒币</text>
+</view>
+
+<view class='company'>
+<text class='comname'>收款方：万洋文化</text>
+<text class='time'>创建时间:{{timestamp}}</text>
+</view>
+<view class='personbtn'>
+<button class='backbtn' bindtap='confirm'>确认</button>
+</view>
+</view>

@@ -1,0 +1,186 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+/*登录图片*/
+
+.login-icon {
+  flex: none;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-img {
+ 
+  border-bottom:solid 0px white;
+  height: 95%;
+  width: 97%;
+  margin-top: 10rpx;
+  border-radius: 7px;
+  /* margin-top: 15rpx; */
+  box-shadow: 2px 2px 10px #ccc;
+  /* box-shadow: -2px -2px 5px #ccc; */
+}
+.login-txt{
+  position:fixed;
+  top: 0px;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.login-txt2{
+  position:fixed;
+  top: 40px;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.txt1 {
+  font-weight: bold;
+  line-height: 100px;
+  color: #ccc;
+  font-size: 40px;
+}
+.txt2 {
+  font-weight: bold;
+  line-height: 100px;
+  color: #ccc;
+  font-size: 20px;
+}
+
+
+/*表单内容*/
+
+.login-from {
+  margin-top: 80px;
+  flex: auto;
+  height: 100%;
+}
+
+.inputView {
+  /* background-color: #fff; */
+  line-height: 30px;
+  height: 30px;
+  width: 75%;
+  margin: 0rpx auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1rpx #ccc solid;
+}
+
+/*输入框*/
+
+.nameImage, .keyImage {
+  margin-left: 15px;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: +12px;
+}
+
+.loginLab {
+  margin-left: 15px;
+  margin-right: 10px;
+  color: gray;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  float: left;
+  /* border-bottom: 1px solid gray;  */
+  /* position: relative;
+  top: +12px; */
+}
+
+.inputText {
+  /* width: 200px; *//* position: relative;
+  left: +102px;
+  top: -70px; */
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  color: gray;
+  font-size: 15px;
+  /* border-bottom: 1px solid gray;  */
+}
+
+.line1 {
+  width: 1px;
+  height: 54px;
+  background-color: #ccc;
+  margin-top: 1px;
+  position: relative;
+  top: -30px;
+  left: +89px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 1px;
+}
+
+/*按钮*/
+
+.loginBtnView {
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  margin-top: 80rpx;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.loginBtn {
+
+  color: white;
+  border-radius: 0px;
+  background-color: rgb(13, 199, 199);
+  font-size: 14px;
+  width: 55%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.wechatbtn {
+  color: white;
+  background-color: rgb(44, 172, 44);
+  margin-top: 30rpx;
+  border-radius: 0px;
+  font-size: 14px;
+  width: 55%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+
+.registerBtn{
+  width:35%;
+  padding-left: 45px;
+  color: black;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  text-align: left;
+  float: left;
+}
+.forgetBtn{
+  width: 35%;
+  padding-right: 45px;
+  color: black;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  text-align: right;
+  float: right;
+}
